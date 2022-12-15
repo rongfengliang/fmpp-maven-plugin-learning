@@ -1,0 +1,14 @@
+recommendedDefaults: 0.9.16
+sourceRoot: templates
+dataRoot: data
+data: {
+   app: tdd(style.tdd),
+   myappinfo: {
+    version: "v1",
+    author: "dalong"
+   },
+   items:json(app.json)
+}
+freemarkerLinks: {
+    inc: includes/
+}

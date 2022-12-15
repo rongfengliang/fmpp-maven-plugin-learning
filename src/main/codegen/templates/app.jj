@@ -1,0 +1,29 @@
+PARSER_BEGIN(MyApp)
+
+package com.dalong;
+/** Simple brace matcher. */
+public class MyApp {
+
+  /** Main entry point. */
+  public static void main(String args[]) throws ParseException {
+    MyApp parser = new MyApp(System.in);
+    parser.Input();
+  }
+
+}
+
+PARSER_END(MyApp)
+
+/** Root production. */
+void Input() :
+{}
+{
+  MatchedBraces() ("\n"|"\r")* <EOF>
+}
+
+/** Brace matching production. */
+void MatchedBraces() :
+{}
+{
+  "{" [ MatchedBraces() ] "}"
+}

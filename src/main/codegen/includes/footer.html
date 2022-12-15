@@ -1,0 +1,14 @@
+
+<#assign a = pp.outputFile>
+<#import "/@inc/macros/login.ftl" as login>
+<#import "/@inc/func/agg.ftl" as agg>
+<div>sourceFileName: ${a}</div>
+
+<@login.greet  person="dalong"/>
+ 
+<footer> 
+   <div>${myappinfo.version}</div>
+   <div>${myappinfo.author}</div>
+   <div> @dalongdemo app </div>   
+   <div>${agg.avg(222,4444)} </div> 
+</footer>
