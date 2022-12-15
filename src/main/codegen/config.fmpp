@@ -3,6 +3,7 @@ sourceRoot: templates
 dataRoot: data
 data: {
    app: tdd(style.tdd),
+   parser:json(parser.json)
    myappinfo: {
     version: "v1",
     author: "dalong"
