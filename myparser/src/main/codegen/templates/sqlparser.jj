@@ -1,0 +1,17 @@
+
+PARSER_BEGIN(${sqlParser.parserName})
+
+package com.dalong;
+
+public class ${sqlParser.parserName} {
+
+    public  void printMessage() {
+
+    }
+
+}
+PARSER_END(${sqlParser.parserName})
+
+  TOKEN: {
+    <NAME:(["a"-"z"])+>  {System.out.println("this is name");}
+  }
